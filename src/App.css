@@ -1,38 +1,114 @@
-.App {
+
+.title{
   text-align: center;
+  font: 2.5em 'Arial';
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+/* NAVBOX */
+.nav-box{
+  padding:1em;
+  border-top:0.15em double darkgrey;
+  border-bottom:0.15em double darkgrey;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbox-setting{
+  padding:1em;
+}
+
+.nav-sub-title{
+  font:1.2em "Helvetica";
+  font-weight:bold;
+  margin-bottom:0.5em;
+}
+
+.nav-box label{
+  font:1.2em "Helvetica";
+  margin-left:0.3em;
+  margin-bottom:0.2em;
+}
+.nav-box select{
+  margin:0.3em 0 -0.8em 0.5em;
+}
+
+.timer{
+  text-align:center;
+  font:2em 'Helvetica';
+  font-weight: bold;
+}
+.button-container{
+  padding-top:0.8em;
+  text-align:center;
+}
+/* END OF NAVBOX */
+
+/* TEXT CONTAINER */
+.text-container{
+  padding:0.7em;
+}
+
+.sub-title-container{
+  padding-left:1em;
+}
+
+.sub-title{
+  font:1.8em "Calibri";
+  margin-bottom:0.5em;
+  border-bottom:0.13em solid darkgrey;
+}
+
+.content-text{
+  padding:0.15em 1em 0.15em 2em;
+}
+
+.content-text textarea{
+  font:1.5em 'Calibri';
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+       box-sizing: border-box;
+  width:100%;
+}
+
+.show-text{
+text-align:justify;
+font:1.35em 'Calibri';
+}
+.show-text input{margin:0.2em;}
+
+.submit-answer{
+  font:0.9em 'Calibri';
+  font-weight: bold;
+  margin-top:0.5em;
+}
+
+.ans{font-weight:bold;}
+.ans-correct{color:green;}
+.ans-corrected{color:orange;}
+.ans-wrong{color:red;}
+
+
+.question-number{font:0.7em Helvetica;}
+
+.result-container{
+  margin:0.8em;
+  font-weight:bold;
+}
+.result-container hr{height:0.16em; color:rgb(63, 59, 59);}
+.result-label{margin-bottom:0.6em;}
+.result-content{margin-bottom:0.6em;}
+@media (max-width:766px){
+  .result-container{
+    text-align:center;
   }
 }
+/* END OF TEXT CONTAINER */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.creator-info{
+  text-align:center;
+  margin-top:1em;
+  padding-top:0.2em;
+  border-top:0.1em solid black;
+  border-bottom:0.1em solid black;
 }
