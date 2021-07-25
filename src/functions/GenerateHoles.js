@@ -21,10 +21,7 @@ export const generateHoles = (question_arr, range, diff_ratio) => {
     diff_range.min = Math.round(diff_ratio.min*diff_range_nbr);
     diff_range.max = Math.round(diff_ratio.max*diff_range_nbr);
     nbr_of_holes = generateNumbers(diff_range.min, diff_range.max);
-    // console.log("nbrs of holes:");
-    // console.log("min, max: "+diff_range.min+","+diff_range.max);
-    // console.log("val: "+nbr_of_holes);
-
+    
     //generate holes
     for(let j = 0; j<nbr_of_holes; j++){
       rand = generateNumbers(range[i], (range[i+1]-1))

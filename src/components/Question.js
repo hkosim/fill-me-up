@@ -27,11 +27,15 @@ const Question= ({question, userAnswer, setUserAnswer, quizState, checkResult})=
       //order: nbr, whitespace, inputbox, whitespace
       finalized_question_form.push(
         <span key={i+'q'} className="question-number">
-            ({counter++}) 
+            ({counter++}){" "}
         </span>)
       finalized_question_form.push(" ")
       finalized_question_form.push(<input key={i+'i'} type="text" size="16" onBlur={(e)=>{setAns(e, i)}}/>)
       finalized_question_form.push(addWhiteSpace(before, question[i], after))
+    }
+    //if enter, enter
+    else if(question[i]==="\n"){
+      finalized_question_form.push(<br key={i+'br'} />);
     }
     //if it's letter or number
     else{

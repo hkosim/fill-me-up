@@ -15,6 +15,51 @@ const input_data = {
     By the grace of God Almighty and motivated by the noble desire to live a free national life, the people of Indonesia hereby declare their independence.
     Subsequent thereto, to form a government of the state of Indonesia which shall protect all the people of Indonesia and all the independence and the land that has been struggled for, and to improve public welfare, to educate the life of the people and to participate toward the establishment of a world order based on freedom, perpetual peace and social justice, therefore the independence of Indonesia shall be formulated into a constitution of the Republic of Indonesia which shall be built into a sovereign state based on a belief in the One and Only God, just and civilised humanity, the unity of Indonesia, and democratic life led by wisdom of thoughts in deliberation amongst representatives of the people, and achieving social justice for all the people of Indonesia.`
   },
+  lisa_gurenge:{
+    title:"(JPOP) Lisa-Gurenge TV-Size",
+    content:`Tsuyoku nareru riyuu wo shitta
+    Boku wo tsurete susume
+    
+    Dorodarake no soumatou ni you
+    Kowabaru kokoro furueru te wa
+    Tsukamitai mono ga aru
+    Sore dake sa
+    
+    Yoru no nioi ni (I'll spend all thirty nights)
+    Sora nirandemo (Staring into the sky)
+    Kawatte ikeru no wa jibun jishin dake
+    Sore dake sa
+    
+    Tsuyoku nareru riyuu wo shitta
+    Boku wo tsurete susume
+    
+    Dou shitatte!
+    
+    Kesenai yume mo tomarenai ima mo
+    Dareka no tame ni tsuyoku nareru nara
+    Nando demo tachiagare
+    Sekai ni uchinomesarete makeru imi wo shitta
+    Guren no hana yo sakihokore
+    Unmei wo terashite`,
+  },
+  abang_tukang_bakso:{
+    title:'Abang Tukang Bakso',
+    content:`Abang tukang bakso
+    Mari-mari sini, aku mau beli
+    Abang tukang bakso
+    Cepat dong kemari
+    Sudah tak tahan lagi
+    Satu mangkok saja
+    Lima ribu perak
+    Yang banyak baksonya
+    Tidak pakai saos
+    Tidak pakai sambel
+    Tapi minta pakai kol
+    Bakso bulat seperti bola pingpong
+    Kalau lewat membikin perut kosong
+    Jadi anak janganlah suka bohong
+    Kalau bohong digigit kambing ompong`
+  },
   bee_movie_part_1:{
     title:"Bee Movie Script part 1",
     content:bee_movie.part1

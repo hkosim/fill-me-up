@@ -88,8 +88,20 @@ function App() {
     //split the string into an array
     // let inp_arr = inputText.trim().replace(/\s*\b\s*/);
     // let inp_arr = inputText.trim().split(/\s+/);
-    // setInputText(inputText.replace(/\r\n|\r|\n/g, ";"));
-    let inp_arr = inputText.trim().split(/\s*\b\s*/);
+    //OLD
+    // let inp_arr = inputText.trim().split(/\s*\b\s*/);
+
+    //split each paragraph
+    let raw_inp_arr = inputText.split(/\r?\n/);
+    let inp_arr = [];
+    raw_inp_arr.forEach((item)=>{
+      //processed input is all item + enter
+      inp_arr = [
+        ...inp_arr,
+        ...item.trim().split(/\s*\b\s*/),
+        "\n"];
+    })
+
     if(inp_arr.length <= 5)
       alert('you need at least 5 characters in the textbox!');
     else
@@ -116,7 +128,6 @@ function App() {
 
   return (
     <div className="container-fluid">
-
       {/* title */}
       <div className="row justify-content-md-center">
         <div className="col-lg-auto title">
@@ -124,7 +135,7 @@ function App() {
         </div>
       </div>
       {/* main */}
-      <div className="row justify-content-md-center">
+      <div className="row justify-content-center content-container">
         {/* navbar */}
         {/*-----------CONTROL BOX---------------*/}
         {/* if preparation: show navbox */}
@@ -311,6 +322,7 @@ function App() {
                 quizState === 2?
                   <div>
                     <Result
+                      title={input_data[selectedAvailableInput]["title"]}
                       question = {questionText}
                       userScore = {userScore}
                       userAnswer = {userAnswer}
@@ -322,8 +334,7 @@ function App() {
             </div> {/*end of div class row in text content*/}
           </div> {/*end of div class col-9 in content*/}
         </div>
-
-    </div> {/* end of container */}
+      </div> {/* end of container */}
       {/* created by */}
       <div className="row justify-content-center creator-info">
         <div className="col-md-auto">
