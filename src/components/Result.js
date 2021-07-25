@@ -1,7 +1,7 @@
 import {addWhiteSpace} from "../functions/AddWhiteSpace"
 import {generateTime} from "../functions/GenerateTime"
 
-const Result= ({title, question, userScore, userAnswer, answerKey, cdFrom})=>{
+const Result= ({title, difficulty, question, userScore, userAnswer, answerKey, cdFrom})=>{
   let finalized_result_form=[];
 
   let counter = 1;
@@ -12,6 +12,7 @@ const Result= ({title, question, userScore, userAnswer, answerKey, cdFrom})=>{
     before= i > 0 ? question[i-1] : null;
     after = i < question.length-1 ? question[i+1] : null;
 
+    console.log(question[i])
     //if it's the question (blank):
     if(question[i] === ""){
       //print the number
@@ -24,7 +25,6 @@ const Result= ({title, question, userScore, userAnswer, answerKey, cdFrom})=>{
               {addWhiteSpace(before, question[i], after)} {/* should you add space? */}
             </span>
           );
-
       }
       //if wronk
       else{
@@ -82,6 +82,12 @@ const Result= ({title, question, userScore, userAnswer, answerKey, cdFrom})=>{
         <div className="col-md-3 result-label">Selected Text</div>
         <div className="col-md-3 result-content">
           {title}
+        </div>
+      </div>
+      <div className="row justify-content-center">
+        <div className="col-md-3 result-label">Difficulty</div>
+        <div className="col-md-3 result-content">
+          {difficulty}
         </div>
       </div>
       <div className="row justify-content-center">

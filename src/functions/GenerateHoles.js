@@ -40,7 +40,6 @@ export const generateHoles = (question_arr, range, diff_ratio) => {
       }
     }
     //end of generate holes
-    
   }
   return {
     question: question_arr,

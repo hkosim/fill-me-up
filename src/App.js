@@ -92,7 +92,7 @@ function App() {
     // let inp_arr = inputText.trim().split(/\s*\b\s*/);
 
     //split each paragraph
-    let raw_inp_arr = inputText.split(/\r?\n/);
+    let raw_inp_arr = inputText.trim().split(/\r?\n/);
     let inp_arr = [];
     raw_inp_arr.forEach((item)=>{
       //processed input is all item + enter
@@ -174,7 +174,9 @@ function App() {
                 <br />
                 {/* div manual input */}
                 <input type="radio" name='manual' checked={inputTextType==="manual"}
-                  onChange={()=>{setInputTextType("manual")}} />
+                  onChange={()=>{
+                    setInputTextType("manual")
+                    }} />
                 <label htmlFor="manual">
                   Manual Input
                 </label>
@@ -322,7 +324,13 @@ function App() {
                 quizState === 2?
                   <div>
                     <Result
-                      title={input_data[selectedAvailableInput]["title"]}
+                      title={
+                        inputTextType === "choose" ?
+                        input_data[selectedAvailableInput]["title"]
+                        :"CUSTOM TEXT"}
+                      difficulty={
+                        selectedDifficulty.charAt(0).toUpperCase() +
+                        selectedDifficulty.slice(1)}
                       question = {questionText}
                       userScore = {userScore}
                       userAnswer = {userAnswer}
