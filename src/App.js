@@ -95,13 +95,15 @@ function App() {
     let raw_inp_arr = inputText.trim().split(/\r?\n/);
     let inp_arr = [];
     raw_inp_arr.forEach((item)=>{
-      //processed input is all item + enter
-      inp_arr = [
-        ...inp_arr,
-        ...item.trim().split(/\s*\b\s*/),
-        "\n"];
+      if (item.trim()!== ""){
+        //processed input is all item + enter
+        inp_arr = [
+          ...inp_arr,
+          ...item.trim().split(/\s*\b\s*/),
+          "\n"];
+      }
     })
-
+    
     if(inp_arr.length <= 5)
       alert('you need at least 5 characters in the textbox!');
     else

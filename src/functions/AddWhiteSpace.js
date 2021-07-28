@@ -8,9 +8,11 @@ export const addWhiteSpace = (before, current, after) => {
   //if its in the middle
   else if(after !== null){
     // if the next content is NOT dot or comma, put a r_space
-    if(!after.match(/^[.,]+$/)){
+    if(!after.match(/^[.,']+$/)){
       //but if the next char or the char right now is strip (-), then don't put anything
-      if(after!=="-" || current!=="-")
+      if(current==="'"||after==="-" || current==="-")
+        return "";
+      else
         return " ";
     }
   }

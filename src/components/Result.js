@@ -12,7 +12,6 @@ const Result= ({title, difficulty, question, userScore, userAnswer, answerKey, c
     before= i > 0 ? question[i-1] : null;
     after = i < question.length-1 ? question[i+1] : null;
 
-    console.log(question[i])
     //if it's the question (blank):
     if(question[i] === ""){
       //print the number
