@@ -1,6 +1,6 @@
 
 # Personal Project: Fill-Me-Up!
-Hello! This project is dedicated to people who have to memorize a long text or simply a material for an exam. By changing missing letters in a sentence and seeing the evaluation after, I believe it will be easier for people to remember their mistakes.
+Hello! This project is dedicated to people who have to memorize a long text or simply a material for an exam. This program will generate gaps that can be filled by the user, in order for them to memorise the missing words. By changing missing letters in a sentence and seeing the evaluation after, I believe it will be easier for people to remember their mistakes.
 
 
 ## Project Description
@@ -17,7 +17,7 @@ Most important of all, the UI could be improved significantly.
 
 That aside, if this will be implemented as a challenge or a game, a scoreboard system could be implemented. 
 
-I haven't also added a support for text in foreign languages that has a lot of special letters (such as Umlaut in German). By adjusting the _regex_, support to these said languages could be implemented.
+I also haven't added a support for text in foreign languages that has a lot of special letters (such as Umlaut in German). By adjusting the _regex_, support to these said languages could be implemented.
 
 I do also think that the layout could be written in a more efficient way.
 ## Afterword
