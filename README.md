@@ -1,70 +1,24 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Personal Project: Fill-Me-Up!
+Hello! This project is dedicated to people who have to memorize a long text or simply a material for an exam. By changing missing letters in a sentence and seeing the evaluation after, I believe it will be easier for people to remember their mistakes.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Project Description
+The User Interface were not the main point of this project.
 
-### `npm start`
+I provided a template text for testing, but the user are able to input their texts manually using a provided textbox. The difficulties and algorithms are created using various functions in their own seperate javascript files in _src/functions_. _Regular Expression_ or known as _regex_ are used to filter the texts from spaces, punctuations, and line breaks. Difficulties are adjusted using parameters, in which determine how many gaps are generated in a sentence.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Then the score are shown in percentage as an evaluation of the quiz.
+## Result
+The web-app are available and could be accessed in https://fill-me-up.netlify.app/.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Improvement
+Most important of all, the UI could be improved significantly.
 
-### `npm test`
+That aside, if this will be implemented as a challenge or a game, a scoreboard system could be implemented. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+I haven't also added a support for text in foreign languages that has a lot of special letters (such as Umlaut in German). By adjusting the _regex_, support to these said languages could be implemented.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I do also think that the layout could be written in a more efficient way.
+## Afterword
+Hopefully this project might be helpful for those who have trouble in memorization. Thank you for reading!
