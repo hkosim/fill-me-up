@@ -25,7 +25,7 @@ const Result= ({title, difficulty, question, userScore, userAnswer, answerKey, c
             </span>
           );
       }
-      //if wronk
+      //if wrong
       else{
         //print and strike the wrong answer
         finalized_result_form.push(

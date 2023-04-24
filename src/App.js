@@ -18,7 +18,7 @@ import { generateTime } from "./functions/GenerateTime";
 function App() {
   //0:write yourself, 1: choose from dropdown
   const [inputTextType, setInputTextType] = useState();
-  //DROPDOWN STUFF
+  //DROPDOWN CHOICES
   const [availableInput, setAvailableInput] = useState([]);
   const [selectedAvailableInput, setSelectedAvailableInput] = useState("");
   //general stuff

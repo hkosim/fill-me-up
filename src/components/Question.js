@@ -16,7 +16,7 @@ const Question= ({question, userAnswer, setUserAnswer, quizState, checkResult})=
 
   let counter = 1, before, after;
 
-  //looping with for so that we can adjust the display
+  //adjusting the display
   for(let i=0; i<question.length; i++){
     //to decide the spacing, needs the value before and after
     before = i > 0 ? question[i-1] : null;
